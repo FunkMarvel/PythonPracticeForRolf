@@ -2,10 +2,17 @@
 Øvelsesoppgaver i python, fra IN1900, med løsningsforslag skrevet i Python 3.7.
 
 ## Oppgaver
-Alle oppgavene er hentet fra 5. utgave av "A Primer on Scientific Programming with Python" av Hans Petter Langtangen.
-De er nummerert med oppgavenummer, anbefalt filnavn, og sidetall. Oppgavene var gitt som ukentlige innleveringsoppgaver høst 2017. [Her kan du finne en PDF](docs/OppgavePDFer/in1900_exercises_2017.pdf) med alle oppgavene fra boka.
+De fleste oppgavene er hentet fra 5. utgave av "A Primer on Scientific Programming with Python" av Hans Petter Langtangen. Oppgaver fra andre oppgavesett vil være markert med en link til PDFen de kommer fra.
 
-### Første sett med oppgaver:
+Hver oppgave er nummerert med oppgavenummer, anbefalt filnavn, og sidetall. Oppgavene var gitt som ukentlige innleveringsoppgaver høst 2017. [Her kan du finne en PDF](docs/OppgavePDFer/in1900_exercises_2017.pdf) med alle oppgavene fra boka.
+
+### 1. sett med oppgaver:
 - 1.6 (interest_rate.py, side 43).
 - 1.10 (gaussian1.py, side 45).
 - 1.11 (kick.py, side 45).
+
+### 2. sett med oppgaver:
+- 2.9 (ball_table2.py, side 83).
+- 2.11 (sum_while.py, side 84).
+- 2.17 (ball_table3.py, side 86).
+- 1.3 (half_life.py, side 5) [fra fysikkheftet](docs/OppgavePDFer/fysikk_oppgaver.pdf).
