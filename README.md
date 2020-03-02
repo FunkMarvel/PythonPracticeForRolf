@@ -7,9 +7,9 @@ De fleste oppgavene er hentet fra 5. utgave av "A Primer on Scientific Programmi
 Hver oppgave er nummerert med oppgavenummer, anbefalt filnavn, og sidetall. Oppgavene var gitt som ukentlige innleveringsoppgaver høst 2017. [Her kan du finne en PDF](docs/OppgavePDFer/in1900_exercises_2017.pdf) med alle oppgavene fra boka.
 
 ### 1. sett med oppgaver:
-- 1.6 (interest_rate.py, side 43).
-- 1.10 (gaussian1.py, side 45).
-- 1.11 (kick.py, side 45).
+- 1.6 (interest_rate.py, side 43) - [løsningsforslag](docs/kode_løsningsforslag/sett_1/interest_rate.py).
+- 1.10 (gaussian1.py, side 45) - [løsningsforslag](docs/kode_løsningsforslag/sett_1/gaussian1.py).
+- 1.11 (kick.py, side 45) - [løsningsforslag](docs/kode_løsningsforslag/sett_1/kick.py).
 
 ### 2. sett med oppgaver:
 - 2.9 (ball_table2.py, side 83).
