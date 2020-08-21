@@ -1,5 +1,5 @@
 # Python 3 Øvelsesoppgaver
-Øvelsesoppgaver i python, fra [IN1900](https://www.uio.no/studier/emner/matnat/ifi/IN1900/h17/ressurser/undervisningsplan.html), med løsningsforslag skrevet i Python 3.7.
+Øvelsesoppgaver i python, fra [IN1900](https://www.uio.no/studier/emner/matnat/ifi/IN1900/h17/ressurser/undervisningsplan.html), med løsningsforslag skrevet i Python 3.8.
 
 Nettside: https://funkmarvel.github.io/PythonPracticeForRolf/
 
