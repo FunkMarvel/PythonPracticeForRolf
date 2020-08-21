@@ -18,6 +18,7 @@ Hver oppgave er nummerert med oppgavenummer, anbefalt filnavn, og sidetall. Oppg
 
 ### 2. sett med oppgaver:
 - 2.9 (ball_table2.py, side 83).
+  - Løsningsforslag: [ball_table2.py](docs/kode_løsningsforslag/sett_2/ball_table2.py).
 - 2.11 (sum_while.py, side 84).
 - 2.17 (ball_table3.py, side 86).
 - 1.3 (half_life.py, side 5) [fra fysikkheftet](docs/OppgavePDFer/fysikk_oppgaver.pdf).
