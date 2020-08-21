@@ -1,26 +1,30 @@
-# Exercise 2.11, author Anders P. Åsbø.
 """
-s = 0; k = 1; M = 100 #integer division when it should be float division, but not a problem in python 3.
-
-while k < M: #k should be smaler than or equal to M, not just smaler than.
-    s += 1/k #this is a while loop, but the loop block misses a statement which increases k by 1 each time it loops.
-
-print s #python 2 syntax won't work in python 3
+Oppgave 2.11, sum_while.py, Anders P. Åsbø.
+Dette programet beregner en sum med en while-løkke. Den orginale implimentasjonen var buggy,
+så filen inneholder først en kopi av orginalkoden hvor bugsene er påpekt, så en funksjonell omskrivning av koden.
 """
 
-# my atempt at fixing this code:
-s = 0
-k = 1.0
-M = 100.0  # making each number float, just in case.
-
-while k <= M:  # with <= the sum is actually equal to the expression we're trying to compute.
-    s += 1.0/k  # again with the float.
-    k = k + 1  # count k up by one.
-
-print(s)  # format the syntax for python 3, and run.
-
-# running example:
+# orginalversjon av kode:
 """
-$ python3 sum_while.py
+s = 0; k = 1; M = 100
+
+while k < M:  # while-løkken går bare for k<M, når den skulle gå for k<=M.
+    s += 1/k  # fordi k sin verdi er den samme hver iterasjon, så vil løkken aldri stoppe.
+
+print s #  dette er python 2 syntax, og vil ikke fungere i python 3.
+"""
+
+#  forsøk på å fikse koden:
+s, k, M = 0, 1, 100
+
+while k <= M:  # løkken løper nå gjennom alle k<=M.
+    s += 1.0/k
+    k += 1  # øker verdien til k med 1, slik at løkken tilslutt stopper.
+
+print(s)  # print-funksjon i riktig syntax.
+
+# kjøreeksempel:
+"""
+run sum_while.py
 5.187377517639621
 """
