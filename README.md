@@ -1,5 +1,6 @@
 # Python 3 Øvelsesoppgaver
 Øvelsesoppgaver i python, fra [IN1900](https://www.uio.no/studier/emner/matnat/ifi/IN1900/h17/ressurser/undervisningsplan.html), med løsningsforslag skrevet i Python 3.7.
+Nettside: https://funkmarvel.github.io/PythonPracticeForRolf/
 
 ## Oppgaver
 De fleste oppgavene er hentet fra 5. utgave av "A Primer on Scientific Programming with Python" av Hans Petter Langtangen. Oppgaver fra andre oppgavesett vil være markert med en link til PDFen de kommer fra.
