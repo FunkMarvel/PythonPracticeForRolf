@@ -18,8 +18,8 @@ p = 5  # 5% rente.
 A = 1000  # startbeløp [€].
 n = 3  # tid på konto [år].
 
-B = A*((1 + p/100)**(n))  # beregner nytt beløp.
-print("Etter %g år har beløpet vokst til €%g." % (n, B))  # printer resultat.
+B = A*((1 + p/100) ** n)  # beregner nytt beløp.
+print(f"Etter {n} år har beløpet vokst til €{B:.2f}.")  # printer resultat.
 
 # kjøreeksempel:
 """

@@ -11,11 +11,11 @@ x = 1  # x-verdi.
 
 # beregner funksjonsverdien. Pass på parantesene!
 f = (1.0/(np.sqrt(2*np.pi)*s))*np.exp((-1.0/2) * ((x - m) / s) ** 2)
-print("f(%g) = %g" % (x, f))
+print(f"f({x}) = {f}")
 
 # kjøreeksempel:
 """
 In [8]: run gaussian1.py
-f(1) = 0.176033
+f(1) = 0.17603266338214976
 """
 # tatt på kalkulator får jeg f(1) = 0.176033.
