@@ -10,7 +10,7 @@ s = 2  # standard-avvik.
 x = 1  # x-verdi.
 
 # beregner funksjonsverdien. Pass på parantesene!
-f = (1.0/(np.sqrt(2*np.pi)*s))*np.exp((-1.0/2)*(((x)-(m))/s)**2)
+f = (1.0/(np.sqrt(2*np.pi)*s))*np.exp((-1.0/2) * ((x - m) / s) ** 2)
 print("f(%g) = %g" % (x, f))
 
 # kjøreeksempel:
