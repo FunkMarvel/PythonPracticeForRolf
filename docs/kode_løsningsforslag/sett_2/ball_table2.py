@@ -31,7 +31,7 @@ for t, y in zip(T, Y):
     # printer koordinater til tabell:
     print(f" {y = :.3f} m {'':1s} | {t = :.3f} s.")
 
-# running example:
+# kjøreeksempel:
 """
 run ball_table2.py
 Høyde i meter: | Tid i sekunder:
