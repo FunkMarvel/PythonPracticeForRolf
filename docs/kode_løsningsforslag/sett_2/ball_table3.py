@@ -1,42 +1,46 @@
 # Exercise 2.17, author Anders P. Åsbø.
+
+import numpy as np
 # solution to a):
 # using the same code as in 2.9 to generate the t and y values.
-n = 10
-i = 0
 
-v0 = 4.0
-g = 1.62
+n = 10  # antall tidssteg.
+i = 0  # initial indeks.
 
-ts = 2.0*v0/g
-dt = ts/n
+v0 = 4.0  # ballens startfart [m/s].
+g = 1.62  # månens tyngdeaksellerasjon [m/s**2].
 
-T = []
-Y = []
+ts = 2.0*v0/g  # sluttverdi for tid [s].
+dt = ts/n  # beregner størelsen på tidssteg [s], slik at t == ts når i == n.
 
+T = np.empty(n+1)  # tomt array for tidskoordinater.
+Y = np.empty(n+1)  # tomt array for y-koordinater.
+
+# løper gjennom indekser:
 while i < n + 1:
-    t = i*dt
-    T.append(t)
-    y = v0*t - (1.0/2.0)*g*(t**2)
-    Y.append(y)
-    i = i + 1
+    T[i] = i*dt  # beregner tid siden start, og lagrer i array.
+    Y[i] = v0*T[i] - (1.0/2.0)*g*(T[i]**2)  # beregner høyde, og lagrer i array.
+    i += 1  # øker indeks med 1.
 
-ty1 = [T, Y]  # creating nested list 1.
+ty1 = np.empty((2, n+1))  # creating nested array 1.
+ty1[0, :] = T
+ty1[1, :] = Y
 
 print("a)" '\n' "t:  |y:")  # adding headers.
 for i in range(len(ty1[0])):  # printing the table from a nested list with columns.
-    print("%.2f|%.2f" % (ty1[0][i], ty1[1][i]))
+    print(f"{ty1[0, i]:.2f}|{ty1[1, i]:.2f}")
 
-print("---------")  # adding a break between the two running examples.
+print("\n---------\n")  # adding a break between the two running examples.
 
 # solution to b):
-ty2 = []  # creating nested list 2.
+ty2 = np.empty((n+1, 2))  # creating nested list 2.
 
-for t, y in zip(T, Y):  # adding the table rows to ty2.
-    ty2.append([t, y])
+ty2[:, 0] = T
+ty2[:, 1] = Y
 
 print("b)" '\n' "t:  |y:")  # adding headers.
 for i in range(len(ty2)):  # printing the table from a nested list with rows.
-    print("%.2f|%.2f" % (ty2[i][0], ty2[i][1]))
+    print(f"{ty2[i, 0]:.2f}|{ty2[i, 1]:.2f}")
 
 # running examples:
 """
